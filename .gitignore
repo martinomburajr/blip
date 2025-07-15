@@ -18,4 +18,51 @@ target
 #  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
 #  and can be added to the global gitignore or merged into this file.  For a more nuclear
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
-#.idea/
+.idea/
+
+# Ignore build outputs inside the plugin directory
+/plugin/build/
+/plugin/CMakeFiles/
+/plugin/CMakeCache.txt
+/plugin/cmake_install.cmake
+/plugin/Makefile
+/plugin/install_manifest.txt
+/plugin/Testing/
+/plugin/CTestTestfile.cmake
+/plugin/compile_commands.json
+/plugin/build.ninja
+/plugin/.ninja_log
+/plugin/.ninja_deps
+
+# Ignore generated Qt files (if applicable)
+/plugin/moc_*.cpp
+/plugin/ui_*.h
+/plugin/qrc_*.cpp
+
+# Ignore typical compiled outputs
+/plugin/*.o
+/plugin/*.obj
+/plugin/*.so
+/plugin/*.a
+/plugin/*.lib
+/plugin/*.dll
+/plugin/*.exe
+/plugin/*.out
+/plugin/*.pdb
+/plugin/*.ilk
+
+# IDE or editor files (optional)
+.plugin/.idea/
+.plugin/.vscode/
+/plugin/*.swp
+/plugin/*.swo
+/plugin/*.log
+/plugin/*.tmp
+/plugin/*.bak
+/plugin/*.old
+
+# macOS and Windows system files
+/plugin/.DS_Store
+/plugin/Thumbs.db
+
+build_output
